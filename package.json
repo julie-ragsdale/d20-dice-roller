@@ -1,0 +1,19 @@
+{
+  "name": "d20-dice-roller",
+  "version": "1.0.0",
+  "description": "A digital spellbook for Dungeons and Dragons",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leaf-junkie/d20-dice-roller.git"
+  },
+  "author": "Julie Ragsdale",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leaf-junkie/d20-dice-roller/issues"
+  },
+  "homepage": "https://github.com/leaf-junkie/d20-dice-roller#readme"
+}

@@ -21,6 +21,7 @@
     </header>
     <main class="container-fluid">
 
+        <!-- Spell deck -->
         <div class="accordion" id="accordionExample">
 
             <!-- Mage Hand -->
@@ -28,7 +29,9 @@
               <div class="card-header" id="headingOne">
                 <h2 class="mb-0">
                   <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <i class="fas fa-book-spells"></i>
                     Mage Hand
+                    <span class="spellLevel">Cantrip</span>
                   </button>
                 </h2>
               </div>
@@ -59,7 +62,6 @@
                 <div class="card-footer bg-transparent">
                     <p class="spellAtHigherLevels text-left" data-school="">
                         Conjuration
-                        <span data-level="">Cantrip</span>
                     </p>
                 </div>
               </div>
@@ -71,6 +73,7 @@
                 <h2 class="mb-0">
                   <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                     Minor Illusion
+                    <span class="spellLevel">Cantrip</span>
                   </button>
                 </h2>
               </div>
@@ -103,7 +106,6 @@
                 <div class="card-footer bg-transparent">
                     <p class="spellAtHigherLevels text-left" data-school="">
                         Conjuration
-                        <span data-level="">Cantrip</span>
                     </p>
                 </div>
             </div>
@@ -115,6 +117,7 @@
                 <h2 class="mb-0">
                   <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                     Prestidigitation
+                    <span class="spellLevel">Cantrip</span>
                   </button>
                 </h2>
               </div>
@@ -150,7 +153,6 @@
                 <div class="card-footer bg-transparent">
                     <p class="spellAtHigherLevels text-left" data-school="">
                         Transmutation
-                        <span data-level="">Cantrip</span>
                     </p>
                 </div>
               </div>
@@ -162,6 +164,7 @@
                   <h2 class="mb-0">
                     <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                     Burning Hands
+                    <span class="spellLevel">Level 1</span>
                     </button>
                   </h2>
                 </div>
@@ -191,7 +194,6 @@
                     <div class="card-footer bg-transparent">
                         <p class="spellAtHigherLevels text-left" data-school="">
                             Evocation
-                            <span data-level="">Cantrip</span>
                         </p>
                     </div>
                 </div>
@@ -203,6 +205,7 @@
                     <h2 class="mb-0">
                     <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                         Find Familiar
+                        <span class="spellLevel">Level 1</span>
                     </button>
                     </h2>
                 </div>
@@ -233,7 +236,6 @@
                     <div class="card-footer bg-transparent">
                         <p class="spellAtHigherLevels text-left" data-school="">
                             Conjuration
-                            <span data-level="">Cantrip</span>
                         </p>
                     </div>
                 </div>
@@ -245,6 +247,7 @@
                     <h2 class="mb-0">
                     <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                         Misty Step
+                        <span class="spellLevel">Level 1</span>
                     </button>
                     </h2>
                 </div>
@@ -273,7 +276,6 @@
                     <div class="card-footer bg-transparent">
                         <p class="spellAtHigherLevels text-left" data-school="">
                             Conjuration
-                            <span data-level="">Cantrip</span>
                         </p>
                     </div>
 
@@ -281,241 +283,6 @@
             </div>
   
           </div>
-
-        <section class="col-11">
-
-            <!-- Spell deck -->
-            <section id="cardDeck" class="row mt-5">
-                
-                <!-- <aside class="spellCard col-xs-12 col-sm-12 col-md-8 col-lg-3">
-                    <div class="card mb-3">
-                        <div class="card-header bg-transparent">
-                            <h5 class="card-title  m-0" data-spellname="">Mage Hand</h5>
-                        </div>
-                        <div class="card-body text-dark">
-                            <div class="row mb-2">
-                                <div class="col-6">
-                                    <p class="spellCastingTime text-center card-text" data-castingtime="">1 action</p>
-                                </div>
-                                <div class="col-6">
-                                    <p class="spellRange text-center card-text" data-range="">30 ft</p>
-                                </div>    
-                            </div>
-                            <div class="row mb-2">
-                                <div class="col-6">
-                                    <p class="spellComponents text-center card-text" data-components="">V, S</p>
-                                </div>
-                                <div class="col-6">
-                                    <p class="spellDuration text-center card-text" data-duration="">1 minute</p>
-                                </div>
-                            </div>
-                            <div class="row p-2">
-                                <p class="spellDescription text-left card-text" data-description="">A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration or until you dismiss it as an action. The hand vanishes if it is ever more than 30 feet away from you or if you cast this spell again.</p>
-                                <p class="spellDescription text-left card-text" data-description="">You can use your action to control the hand. You can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You can move the hand up to 30 feet each time you use it.</p>
-                                <p class="spellDescription text-left card-text" data-description="">The hand can't attack, activate magic items, or carry more than 10 pounds.</p>
-                            </div>
-                        </div>
-                        <div class="card-footer bg-transparent">
-                            <p class="spellAtHigherLevels text-left" data-school="">
-                                Conjuration
-                                <span data-level="">Cantrip</span>
-                            </p>
-                        </div>
-                        </div>
-                </aside>  -->
-
-                <!-- <aside class="spellCard col-xs-12 col-sm-12 col-md-8 col-lg-3">
-                    <div class="card mb-3">
-                        <div class="card-header bg-transparent">
-                            <h5 class="card-title text-center m-0" data-spellname="">Minor Illusion</h5>
-                        </div>
-                        <div class="card-body text-dark">
-                            <div class="row mb-2">
-                                <div class="col-6">
-                                    <p class="spellCastingTime text-center card-text" data-castingtime="">1 action</p>
-                                </div>
-                                <div class="col-6">
-                                    <p class="spellRange text-center card-text" data-range="">30 ft</p>
-                                </div>    
-                            </div>
-                            <div class="row mb-2">
-                                <div class="col-6">
-                                    <p class="spellComponents text-center card-text" data-components="">S, M</p>
-                                </div>
-                                <div class="col-6">
-                                    <p class="spellDuration text-center card-text" data-duration="">1 minute</p>
-                                </div>
-                            </div>
-                            <div class="row p-2">
-                                <p class="spellDescription text-left card-text" data-description="">Material: a bit of fleece. You create a sound or an image of an object within range that lasts for the duration. The illusion also ends if you dismiss it as an action or cast this spell again.</p>
-                                <p class="spellDescription text-left card-text" data-description="">If you create a sound, its volume can range from a whisper to a scream. It can be your voice, someone else's voice, a lion's roar, a beating of drums, or any other sound you choose. The sound continues unabated throughout the duration, or you can make discrete sounds at different times before the spell ends.</p>
-                                <p class="spellDescription text-left card-text" data-description="">If you create an image of an object--such as a chair, muddy footprints, or a small chest--it must be no larger than a 5-foot cube. The image can't create sound, light, smell, or any other sensory effect. Physical interaction with the image reveals it to be an illusion, because things can pass through it.</p>
-                                <p class="spellDescription text-left card-text" data-description="">If a creature uses its action to examine the sound or image, the creature can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the illusion becomes faint to the creature.</p>
-    
-                            </div>
-                        </div>
-                        <div class="card-footer bg-transparent">
-                            <p class="spellAtHigherLevels text-left" data-school="">
-                                Conjuration
-                                <span data-level="">Cantrip</span>
-                            </p>
-                        </div>
-                    </div>
-                </aside>  -->
-
-                <!-- <aside class="spellCard col-xs-12 col-sm-12 col-md-8 col-lg-3">
-                    <div class="card mb-3">
-                        <div class="card-header bg-transparent">
-                            <h5 class="card-title text-center m-0" data-spellname="">Prestidigitation</h5>
-                        </div>
-                        <div class="card-body text-dark">
-                            <div class="row mb-2">
-                                <div class="col-6">
-                                    <p class="spellCastingTime text-center card-text" data-castingtime="">1 action</p>
-                                </div>
-                                <div class="col-6">
-                                    <p class="spellRange text-center card-text" data-range="">10 ft</p>
-                                </div>    
-                            </div>
-                            <div class="row mb-2">
-                                <div class="col-6">
-                                    <p class="spellComponents text-center card-text" data-components="">V, S</p>
-                                </div>
-                                <div class="col-6">
-                                    <p class="spellDuration text-center card-text" data-duration="">1 hour</p>
-                                </div>
-                            </div>
-                            <div class="row p-2">
-                                <p class="spellDescription text-left card-text" data-description="">This spell is a minor magical trick that novice spellcasters use for practice. You create one of the following magical effects within 'range':</p>
-                                <p class="spellDescription text-left card-text" data-description="">You create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor.</p>
-                                <p class="spellDescription text-left card-text" data-description="">You instantaneously light or snuff out a candle, a torch, or a small campfire.</p>
-                                <p class="spellDescription text-left card-text" data-description="">You instantaneously clean or soil an object no larger than 1 cubic foot.</p>
-                                <p class="spellDescription text-left card-text" data-description="">You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour.</p>
-                                <p class="spellDescription text-left card-text" data-description="">You make a color, a small mark, or a symbol appear on an object or a surface for 1 hour.</p>
-                                <p class="spellDescription text-left card-text" data-description="">You create a nonmagical trinket or an illusory image that can fit in your hand and that lasts until the end of your next turn.</p>
-                                <p class="spellDescription text-left card-text" data-description="">If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.</p>
-                            </div>
-                        </div>
-                        <div class="card-footer bg-transparent">
-                            <p class="spellAtHigherLevels text-left" data-school="">
-                                Transmutation
-                                <span data-level="">Cantrip</span>
-                            </p>
-                        </div>
-                    </div>
-                </aside>  -->
-
-                <!-- <aside class="spellCard col-xs-12 col-sm-12 col-md-8 col-lg-3">
-                    <div class="card mb-3">
-                        <div class="card-header bg-transparent">
-                            <h5 class="card-title text-center m-0" data-spellname="">Burning Hands</h5>
-                        </div>
-                        <div class="card-body text-dark">
-                            <div class="row mb-2">
-                                <div class="col-6">
-                                    <p class="spellCastingTime text-center card-text" data-castingtime="">1 action</p>
-                                </div>
-                                <div class="col-6">
-                                    <p class="spellRange text-center card-text" data-range="">Self</p>
-                                </div>    
-                            </div>
-                            <div class="row mb-2">
-                                <div class="col-6">
-                                    <p class="spellComponents text-center card-text" data-components="">V, S</p>
-                                </div>
-                                <div class="col-6">
-                                    <p class="spellDuration text-center card-text" data-duration="">Instantaneous</p>
-                                </div>
-                            </div>
-                            <div class="row p-2">
-                                <p class="spellDescription text-left card-text" data-description="">As you hold your hands with thumbs touching and fingers spread, a thin sheet of flames shoots forth from your outstretched fingertips. Each creature in a 15-foot cone must make a dexterity saving throw. A creature takes 3d6 fire damage on a failed save, or half as much damage on a successful one.</p>
-                                <p class="spellDescription text-left card-text" data-description="">The fire ignites any flammable objects in the area that aren't being worn or carried.</p>
-                            </div>
-                        </div>
-                        <div class="card-footer bg-transparent">
-                            <p class="spellAtHigherLevels text-left" data-school="">
-                                Evocation
-                                <span data-level="">Cantrip</span>
-                            </p>
-                        </div>
-                    </div>
-                </aside>     -->
-
-                <!-- <aside class="spellCard col-xs-12 col-sm-12 col-md-8 col-lg-3">
-                    <div class="card mb-3">
-                        <div class="card-header bg-transparent">
-                            <h5 class="card-title text-center m-0" data-spellname="">Find Familiar</h5>
-                        </div>
-                        <div class="card-body text-dark">
-                            <div class="row mb-2">
-                                <div class="col-6">
-                                    <p class="spellCastingTime text-center card-text" data-castingtime="">1 hour</p>
-                                </div>
-                                <div class="col-6">
-                                    <p class="spellRange text-center card-text" data-range="">10 ft</p>
-                                </div>    
-                            </div>
-                            <div class="row mb-2">
-                                <div class="col-6">
-                                    <p class="spellComponents text-center card-text" data-components="">V, S, M</p>
-                                </div>
-                                <div class="col-6">
-                                    <p class="spellDuration text-center card-text" data-duration="">Instantaneous</p>
-                                </div>
-                            </div>
-                            <div class="row p-2">
-                                <p class="spellDescription text-left card-text" data-description="">You gain the service of a familiar, a spirit that takes an animal form you choose: bat, cat, crab, frog (toad), hawk, lizard, octopus, owl, poisonous snake, fish (quipper), rat, raven, sea horse, spider, or weasel. Appearing in an unoccupied space within range, the familiar has the statistics of the chosen form, though it is a celestial, fey, or fiend (your choice) instead of a beast.</p>
-                                <p class="spellDescription text-left card-text" data-description="">Your familiar acts independently of you, but it always obeys your commands. In combat, it rolls its own initiative and acts on its own turn. A familiar can't attack, but it can take other actions as normal.</p>
-                                <p class="spellDescription text-left card-text" data-description="">When the familiar drops to 0 hit points, it disappears, leaving behind no physical form. It reappears after you cast this spell again.</p>
-                            </div>
-                        </div>
-                        <div class="card-footer bg-transparent">
-                            <p class="spellAtHigherLevels text-left" data-school="">
-                                Conjuration
-                                <span data-level="">Cantrip</span>
-                            </p>
-                        </div>
-                    </div>
-                </aside>     -->
-
-                <!-- <aside class="spellCard col-xs-12 col-sm-12 col-md-8 col-lg-3">
-                    <div class="card mb-3">
-                        <div class="card-header bg-transparent">
-                            <h5 class="card-title text-center m-0" data-spellname="">Misty Step</h5>
-                        </div>
-                        <div class="card-body text-dark">
-                            <div class="row mb-2">
-                                <div class="col-6">
-                                    <p class="spellCastingTime text-center card-text" data-castingtime="">1 bonus action</p>
-                                </div>
-                                <div class="col-6">
-                                    <p class="spellRange text-center card-text" data-range="">Self</p>
-                                </div>    
-                            </div>
-                            <div class="row mb-2">
-                                <div class="col-6">
-                                    <p class="spellComponents text-center card-text" data-components="">V</p>
-                                </div>
-                                <div class="col-6">
-                                    <p class="spellDuration text-center card-text" data-duration="">Instantaneous</p>
-                                </div>
-                            </div>
-                            <div class="row p-2">
-                                <p class="spellDescription text-left card-text" data-description="">Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space that you can see.</p>
-                            </div>
-                        </div>
-                        <div class="card-footer bg-transparent">
-                            <p class="spellAtHigherLevels text-left" data-school="">
-                                Conjuration
-                                <span data-level="">Cantrip</span>
-                            </p>
-                        </div>
-                    </div>
-                </aside>    -->
-
-            </section>
-
-        </section>
 
         <!-- Modal -->
         <section id="diceRollerModal">
