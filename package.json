@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/leaf-junkie/d20-dice-roller/issues"
   },
-  "homepage": "https://github.com/leaf-junkie/d20-dice-roller#readme"
+  "homepage": "https://github.com/leaf-junkie/d20-dice-roller#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-pro": "^5.15.1"
+  }
 }

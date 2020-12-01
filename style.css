@@ -45,9 +45,34 @@ main {
     width: 95vw;
 }
 
-.card-header > h2 > button {
+.cardHeaderBtn {
     color: #333333;
     text-decoration: none !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* color code for spell classes and schools */
+.abjuration {
+    color: #E6858F;
+}
+
+.conjuration {
+    /* color: #FA905F; */
+    color: #965152;
+}
+
+.transmutation {
+    color:#063B7D;
+}
+
+.evocation {
+    color:#EBD794;
+}
+
+.necromancy {
+    color:#B58FAD;
 }
 
 footer {
