@@ -7,6 +7,8 @@ body {
 }
 
 main {
+    margin-top: 2vh;
+    margin-bottom: 4vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,13 +49,13 @@ main {
 }
 
 #rollNum {
-    /* font-family: 'Texturina', serif; */
+    font-family: 'Texturina', serif;
     color: #ffffff;
     margin: 0 auto;
     font-size: 100px;
     width: 100%;
     padding: 24px;
-    margin-top: -10px;
+    margin-bottom: 45px;
 }
 
 .card-header {
@@ -105,38 +107,37 @@ main {
 }
 
 .abjurationBorder {
-    border: 2px solid #7AA1BB;
-    border-bottom: 2px solid #7AA1BB;
+    border: 20px solid #7AA1BB;
 }
 
 .conjurationBorder {
-    border: 2px solid #965152;
+    border: 20px solid #965152;
 }
 
 .transmutationBorder {
-    border: 2px solid #063B7D;
+    border: 20px solid #063B7D;
 }
 
 .evocationBorder {
-    border: 2px solid #EBD794;
+    border: 20px solid #EBD794;
 }
 
 .necromancyBorder {
-    border: 2px solid #4B6D3E;
+    border: 20px solid #4B6D3E;
 }
 
 .divinationBorder {
-    border: 2px solid #E6858F;
+    border: 20px solid #E6858F;
 }
 
 .enchantmentBorder {
-    border: 2px solid #B58FAD;
+    border: 20px solid #B58FAD;
 }
 
 .illusionBorder {
-    /* border:  2px solid #FA905F; */
-    /* border:  2px solid #878587; */
-    border: 2px solid #C5CACC;
+    /* border:  20px solid #FA905F; */
+    /* border:  20px solid #878587; */
+    border: 20px solid #C5CACC;
 }
 
 

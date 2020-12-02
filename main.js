@@ -9,11 +9,6 @@ function updateScreen(roll) {
 
 function clearPreviousRoll() {
     document.querySelector('#rollNum').textContent = '...';
-    // document.addEventListener('click', function(event) {
-    //     if (event.target.matches('.toggleModalBtn')) {
-    //         console.log("hi");
-    //     }
-    // });
 }
 
 document.addEventListener('click', function(event) {
