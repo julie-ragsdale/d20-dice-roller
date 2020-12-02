@@ -66,6 +66,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
 }
 
 /* color code for spell classes and schools */
@@ -139,7 +140,7 @@ main {
 }
 
 
-footer {
+/* footer {
     position: relative;
     bottom: 0;
     width: 100%;
@@ -147,11 +148,18 @@ footer {
     flex-direction: row;
     justify-content: center;
     font-size: 10px;
-}
+} */
 
 @media screen and (min-width: 768px) {
-    .spellsContainer {
-        width: 75vw;
+    main {
+        margin-top: 4vh;
+    }
+    .spellsContainer,
+    .cardHeaderBtn {
+        width: 60%;
+    }
+    .card-body {
+        padding: 30px;
     }
 }
 
@@ -159,14 +167,15 @@ footer {
     .navbar {
         justify-content: space-between;
     }
-
-    .spellsContainer {
-        width: 50vw;
+    .spellsContainer,
+    .cardHeaderBtn {
+        width: 50%;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    .spellsContainer {
-        width: 30vw;
+    .spellsContainer,
+    .cardHeaderBtn {
+        width: 30%;
     }
 }
