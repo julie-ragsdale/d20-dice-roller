@@ -13,173 +13,37 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">D&D Spellbook</a>
-            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button> -->
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary toggleModalBtn" data-toggle="modal" data-target="#diceroller">Roll</button>
+            <button type="button" class="btn toggleModalBtn" data-toggle="modal" data-target="#diceroller">Roll</button>
         </nav>    
     </header>
     <main class="container-fluid">
 
-        <!-- Spell deck -->
-        <div class="accordion" id="accordionExample">
-
-            <!-- Mage Hand -->
-            <div class="card">
-              <div class="card-header" id="heading1">
-                <h2 class="mb-0">
-                  <button class="btn btn-link btn-block text-left cardHeaderBtn" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                    <p class="m-0"><i class="fas fa-book-spells conjuration"></i> Mage Hand</p>
-                    <p class="spellLevel text-right m-0">Cantrip</p>
-                  </button>
-                </h2>
-              </div>
-              <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordionExample">
-                <div class="card-body text-dark">
-                    <div class="row mb-2">
-                        <div class="col-6">
-                            <p class="text-center card-text mb-0">CASTING TIME</p>
-                            <p class="spellCastingTime text-center card-text" data-castingtime="">1 action</p>
-                        </div>
-                        <div class="col-6">
-                            <p class="text-center card-text mb-0">RANGE</p>
-                            <p class="spellRange text-center card-text" data-range="">30 ft</p>
-                        </div>    
-                    </div>
-                    <div class="row mb-2">
-                        <div class="col-6">
-                            <p class="text-center card-text mb-0">COMPONENTS</p>
-                            <p class="spellComponents text-center card-text" data-components="">V, S</p>
-                        </div>
-                        <div class="col-6">
-                            <p class="text-center card-text mb-0">DURATION</p>
-                            <p class="spellDuration text-center card-text" data-duration="">1 minute</p>
-                        </div>
-                    </div>
-                    <div class="row p-2">
-                        <p class="spellDescription text-left card-text" data-description="">A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration or until you dismiss it as an action. The hand vanishes if it is ever more than 30 feet away from you or if you cast this spell again.</p>
-                        <p class="spellDescription text-left card-text" data-description="">You can use your action to control the hand. You can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You can move the hand up to 30 feet each time you use it.</p>
-                        <p class="spellDescription text-left card-text" data-description="">The hand can't attack, activate magic items, or carry more than 10 pounds.</p>
-                    </div>
-                </div>
-                <!-- <div class="card-footer bg-transparent">
-                    <p class="spellAtHigherLevels text-left" data-school="">
-                        Conjuration
-                    </p>
-                </div> -->
-              </div>
-            </div>
-
-            <!-- Minor Illusion -->
-            <div class="card">
-              <div class="card-header" id="heading2">
-                <h2 class="mb-0">
-                  <button class="btn btn-link btn-block text-left cardHeaderBtn collapsed" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                    <p class="m-0"><i class="fas fa-book-spells conjuration"></i> Minor Illusion</p>
-                    <p class="spellLevel m-0">Cantrip</p>
-                  </button>
-                </h2>
-              </div>
-              <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordionExample">
-                <div class="card-body text-dark">
-                    <div class="row mb-2">
-                        <div class="col-6">
-                            <p class="text-center card-text mb-0">CASTING TIME</p>
-                            <p class="spellCastingTime text-center card-text" data-castingtime="">1 action</p>
-                        </div>
-                        <div class="col-6">
-                            <p class="text-center card-text mb-0">RANGE</p>
-                            <p class="spellRange text-center card-text" data-range="">30 ft</p>
-                        </div>    
-                    </div>
-                    <div class="row mb-2">
-                        <div class="col-6">
-                            <p class="text-center card-text mb-0">COMPONENTS</p>
-                            <p class="spellComponents text-center card-text" data-components="">S, M</p>
-                        </div>
-                        <div class="col-6">
-                            <p class="text-center card-text mb-0">DURATION</p>
-                            <p class="spellDuration text-center card-text" data-duration="">1 minute</p>
-                        </div>
-                    </div>
-                    <div class="row p-2">
-                        <p class="spellDescription text-left card-text" data-description="">Material: a bit of fleece. You create a sound or an image of an object within range that lasts for the duration. The illusion also ends if you dismiss it as an action or cast this spell again.</p>
-                        <p class="spellDescription text-left card-text" data-description="">If you create a sound, its volume can range from a whisper to a scream. It can be your voice, someone else's voice, a lion's roar, a beating of drums, or any other sound you choose. The sound continues unabated throughout the duration, or you can make discrete sounds at different times before the spell ends.</p>
-                        <p class="spellDescription text-left card-text" data-description="">If you create an image of an object--such as a chair, muddy footprints, or a small chest--it must be no larger than a 5-foot cube. The image can't create sound, light, smell, or any other sensory effect. Physical interaction with the image reveals it to be an illusion, because things can pass through it.</p>
-                        <p class="spellDescription text-left card-text" data-description="">If a creature uses its action to examine the sound or image, the creature can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the illusion becomes faint to the creature.</p>
-
-                    </div>
-                </div>
-            </div>
-            </div>
-
-            <!-- Prestidigitation -->
-            <div class="card">
-              <div class="card-header" id="heading3">
-                <h2 class="mb-0">
-                  <button class="btn btn-link btn-block text-left cardHeaderBtn collapsed" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                    <p class="m-0"><i class="fas fa-book-spells transmutation"></i> Prestidigitation</p>
-                    <p class="spellLevel m-0">Cantrip</p>
-                  </button>
-                </h2>
-              </div>
-              <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordionExample">
-                <div class="card-body text-dark">
-                    <div class="row mb-2">
-                        <div class="col-6">
-                            <p class="text-center card-text mb-0">CASTING TIME</p>
-                            <p class="spellCastingTime text-center card-text" data-castingtime="">1 action</p>
-                        </div>
-                        <div class="col-6">
-                            <p class="text-center card-text mb-0">RANGE</p>
-                            <p class="spellRange text-center card-text" data-range="">10 ft</p>
-                        </div>    
-                    </div>
-                    <div class="row mb-2">
-                        <div class="col-6">
-                            <p class="text-center card-text mb-0">COMPONENTS</p>
-                            <p class="spellComponents text-center card-text" data-components="">V, S</p>
-                        </div>
-                        <div class="col-6">
-                            <p class="text-center card-text mb-0">DURATION</p>
-                            <p class="spellDuration text-center card-text" data-duration="">1 hour</p>
-                        </div>
-                    </div>
-                    <div class="row p-2">
-                        <p class="spellDescription text-left card-text" data-description="">This spell is a minor magical trick that novice spellcasters use for practice. You create one of the following magical effects within 'range':</p>
-                        <p class="spellDescription text-left card-text" data-description="">You create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor.</p>
-                        <p class="spellDescription text-left card-text" data-description="">You instantaneously light or snuff out a candle, a torch, or a small campfire.</p>
-                        <p class="spellDescription text-left card-text" data-description="">You instantaneously clean or soil an object no larger than 1 cubic foot.</p>
-                        <p class="spellDescription text-left card-text" data-description="">You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour.</p>
-                        <p class="spellDescription text-left card-text" data-description="">You make a color, a small mark, or a symbol appear on an object or a surface for 1 hour.</p>
-                        <p class="spellDescription text-left card-text" data-description="">You create a nonmagical trinket or an illusory image that can fit in your hand and that lasts until the end of your next turn.</p>
-                        <p class="spellDescription text-left card-text" data-description="">If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.</p>
-                    </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Burning Hands -->
-            <div class="card">
-                <div class="card-header" id="heading4">
-                  <h2 class="mb-0">
-                    <button class="btn btn-link btn-block text-left cardHeaderBtn" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                    <p class="m-0"><i class="fas fa-book-spells evocation"></i> Burning Hands</p>
-                    <p class="spellLevel m-0">Level 1</p>
-                    </button>
-                  </h2>
-                </div>
-                <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionExample">
-                    <div class="card-body text-dark">
+        <section class="spellsContainer">
+            <!-- Spell deck -->
+            <div class="accordion" id="accordionExample">
+    
+                <!-- Mage Hand -->
+                <div class="card">
+                  <div class="card-header" id="heading1">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left cardHeaderBtn" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                        <p class="m-0"><i class="fas fa-book-spells conjuration"></i> Mage Hand</p>
+                        <p class="spellLevel text-right m-0">Cantrip</p>
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapse1" class="collapse show conjurationBorder" aria-labelledby="heading1" data-parent="#accordionExample">
+                    <div class="card-body text-dark bg-white">
+                        <p class="text-center card-text">Conjuration</p>
                         <div class="row mb-2">
                             <div class="col-6">
-                            <p class="text-center card-text mb-0">CASTING TIME</p>
+                                <p class="text-center card-text mb-0">CASTING TIME</p>
                                 <p class="spellCastingTime text-center card-text" data-castingtime="">1 action</p>
                             </div>
                             <div class="col-6">
                                 <p class="text-center card-text mb-0">RANGE</p>
-                                <p class="spellRange text-center card-text" data-range="">Self</p>
+                                <p class="spellRange text-center card-text" data-range="">30 ft</p>
                             </div>    
                         </div>
                         <div class="row mb-2">
@@ -189,115 +53,36 @@
                             </div>
                             <div class="col-6">
                                 <p class="text-center card-text mb-0">DURATION</p>
-                                <p class="spellDuration text-center card-text" data-duration="">Instantaneous</p>
+                                <p class="spellDuration text-center card-text" data-duration="">1 minute</p>
                             </div>
                         </div>
                         <div class="row p-2">
-                            <p class="spellDescription text-left card-text" data-description="">As you hold your hands with thumbs touching and fingers spread, a thin sheet of flames shoots forth from your outstretched fingertips. Each creature in a 15-foot cone must make a dexterity saving throw. A creature takes 3d6 fire damage on a failed save, or half as much damage on a successful one.</p>
-                            <p class="spellDescription text-left card-text" data-description="">The fire ignites any flammable objects in the area that aren't being worn or carried.</p>
+                            <p class="spellDescription text-left card-text" data-description="">A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration or until you dismiss it as an action. The hand vanishes if it is ever more than 30 feet away from you or if you cast this spell again.</p>
+                            <p class="spellDescription text-left card-text" data-description="">You can use your action to control the hand. You can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You can move the hand up to 30 feet each time you use it.</p>
+                            <p class="spellDescription text-left card-text" data-description="">The hand can't attack, activate magic items, or carry more than 10 pounds.</p>
                         </div>
                     </div>
-                    <div class="card-footer bg-transparent">
+                    <!-- <div class="card-footer bg-transparent">
                         <p class="spellAtHigherLevels text-left" data-school="">
-                            Evocation
+                            Conjuration
                         </p>
-                    </div>
+                    </div> -->
+                  </div>
                 </div>
-            </div>
-  
-            <!-- Feather Fall -->
-            <div class="card">
-                <div class="card-header" id="heading5">
+    
+                <!-- Minor Illusion -->
+                <div class="card">
+                  <div class="card-header" id="heading2">
                     <h2 class="mb-0">
-                    <button class="btn btn-link btn-block text-left cardHeaderBtn" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                    <p class="m-0"><i class="fas fa-book-spells transmutation"></i> Feather Fall</p>
-                    <p class="spellLevel m-0">Level 1</p>
-                    </button>
+                      <button class="btn btn-link btn-block text-left cardHeaderBtn collapsed" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                        <p class="m-0"><i class="fas fa-book-spells conjuration"></i> Minor Illusion</p>
+                        <p class="spellLevel m-0">Cantrip</p>
+                      </button>
                     </h2>
-                </div>
-                <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordionExample">
+                  </div>
+                  <div id="collapse2" class="conjurationBorder collapse" aria-labelledby="heading2" data-parent="#accordionExample">
                     <div class="card-body text-dark">
-                        <div class="row mb-2">
-                            <div class="col-6">
-                                <p class="text-center card-text mb-0">CASTING TIME</p>
-                                <p class="spellCastingTime text-center card-text" data-castingtime="">1 reaction</p>
-                            </div>
-                            <div class="col-6">
-                                <p class="text-center card-text mb-0">RANGE</p>
-                                <p class="spellRange text-center card-text" data-range="">60 ft</p>
-                            </div>    
-                        </div>
-                        <div class="row mb-2">
-                            <div class="col-6">
-                                <p class="text-center card-text mb-0">COMPONENTS</p>
-                                <p class="spellComponents text-center card-text" data-components="">V, M</p>
-                            </div>
-                            <div class="col-6">
-                                <p class="text-center card-text mb-0">DURATION</p>
-                                <p class="spellDuration text-center card-text" data-duration="">1 minute</p>
-                            </div>
-                        </div>
-                        <div class="row p-2">
-                            <p class="spellDescription text-left card-text" data-description="">Material: a small feather or piece of down</p>
-                            <p class="spellDescription text-left card-text" data-description="">Choose up to five falling creatures within range. A falling creature's rate of descent slows to 60 feet per round until the spell ends. If the creature lands before the spell ends, it takes no falling damage and can land on its feet, and the spell ends for that creature.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Find Familiar -->
-            <div class="card">
-                <div class="card-header" id="heading6">
-                    <h2 class="mb-0">
-                    <button class="btn btn-link btn-block text-left cardHeaderBtn collapsed" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
-                      <p class="m-0"><i class="fas fa-book-spells conjuration"></i> Find Familiar</p>
-                      <p class="spellLevel m-0">Level 1</p>
-                    </button>
-                    </h2>
-                </div>
-                <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordionExample">
-                    <div class="card-body text-dark">
-                        <div class="row mb-2">
-                            <div class="col-6">
-                                <p class="text-center card-text mb-0">CASTING TIME</p>
-                                <p class="spellCastingTime text-center card-text" data-castingtime="">1 hour</p>
-                            </div>
-                            <div class="col-6">
-                                <p class="text-center card-text mb-0">RANGE</p>
-                                <p class="spellRange text-center card-text" data-range="">10 ft</p>
-                            </div>    
-                        </div>
-                        <div class="row mb-2">
-                            <div class="col-6">
-                                <p class="text-center card-text mb-0">COMPONENTS</p>
-                                <p class="spellComponents text-center card-text" data-components="">V, S, M</p>
-                            </div>
-                            <div class="col-6">
-                                <p class="text-center card-text mb-0">DURATION</p>
-                                <p class="spellDuration text-center card-text" data-duration="">Instantaneous</p>
-                            </div>
-                        </div>
-                        <div class="row p-2">
-                            <p class="spellDescription text-left card-text" data-description="">You gain the service of a familiar, a spirit that takes an animal form you choose: bat, cat, crab, frog (toad), hawk, lizard, octopus, owl, poisonous snake, fish (quipper), rat, raven, sea horse, spider, or weasel. Appearing in an unoccupied space within range, the familiar has the statistics of the chosen form, though it is a celestial, fey, or fiend (your choice) instead of a beast.</p>
-                            <p class="spellDescription text-left card-text" data-description="">Your familiar acts independently of you, but it always obeys your commands. In combat, it rolls its own initiative and acts on its own turn. A familiar can't attack, but it can take other actions as normal.</p>
-                            <p class="spellDescription text-left card-text" data-description="">When the familiar drops to 0 hit points, it disappears, leaving behind no physical form. It reappears after you cast this spell again.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-  
-            <!-- Grease -->
-            <div class="card">
-                <div class="card-header" id="heading7">
-                    <h2 class="mb-0">
-                    <button class="btn btn-link btn-block text-left cardHeaderBtn" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
-                    <p class="m-0"><i class="fas fa-book-spells conjuration"></i> Grease</p>
-                    <p class="spellLevel m-0">Level 1</p>
-                    </button>
-                    </h2>
-                </div>
-                <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordionExample">
-                    <div class="card-body text-dark">
+                        <p class="text-center card-text">Conjuration</p>
                         <div class="row mb-2">
                             <div class="col-6">
                                 <p class="text-center card-text mb-0">CASTING TIME</p>
@@ -305,48 +90,7 @@
                             </div>
                             <div class="col-6">
                                 <p class="text-center card-text mb-0">RANGE</p>
-                                <p class="spellRange text-center card-text" data-range="">60 ft</p>
-                            </div>    
-                        </div>
-                        <div class="row mb-2">
-                            <div class="col-6">
-                                <p class="text-center card-text mb-0">COMPONENTS</p>
-                                <p class="spellComponents text-center card-text" data-components="">V, S, M</p>
-                            </div>
-                            <div class="col-6">
-                                <p class="text-center card-text mb-0">DURATION</p>
-                                <p class="spellDuration text-center card-text" data-duration="">1 minute</p>
-                            </div>
-                        </div>
-                        <div class="row p-2">
-                            <p class="spellDescription text-left card-text" data-description="">Material: a bit of pork rind or butter</p>
-                            <p class="spellDescription text-left card-text" data-description="">Slick grease covers the ground in a 10-foot square centered on a point within range and turns it into difficult terrain for the duration.</p>
-                            <p class="spellDescription text-left card-text" data-description="">When the grease appears, each creature standing in its area must succeed on a Dexterity saving throw or fall prone. A creature that enters the area or ends its turn there must also succeed on a Dexterity saving throw or fall prone.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Ice Knife -->
-            <div class="card">
-                <div class="card-header" id="heading8">
-                    <h2 class="mb-0">
-                    <button class="btn btn-link btn-block text-left cardHeaderBtn" type="button" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
-                    <p class="m-0"><i class="fas fa-book-spells conjuration"></i> Ice Knife</p>
-                    <p class="spellLevel m-0">Level 1</p>
-                    </button>
-                    </h2>
-                </div>
-                <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordionExample">
-                    <div class="card-body text-dark">
-                        <div class="row mb-2">
-                            <div class="col-6">
-                                <p class="text-center card-text mb-0">CASTING TIME</p>
-                                <p class="spellCastingTime text-center card-text" data-castingtime="">1 action</p>
-                            </div>
-                            <div class="col-6">
-                                <p class="text-center card-text mb-0">RANGE</p>
-                                <p class="spellRange text-center card-text" data-range="">60 ft</p>
+                                <p class="spellRange text-center card-text" data-range="">30 ft</p>
                             </div>    
                         </div>
                         <div class="row mb-2">
@@ -356,28 +100,33 @@
                             </div>
                             <div class="col-6">
                                 <p class="text-center card-text mb-0">DURATION</p>
-                                <p class="spellDuration text-center card-text" data-duration="">Instantaneous</p>
+                                <p class="spellDuration text-center card-text" data-duration="">1 minute</p>
                             </div>
                         </div>
                         <div class="row p-2">
-                            <p class="spellDescription text-left card-text" data-description="">You create a shard of ice and fling it at one creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 piercing damage. Hit or miss, the shard then explodes. The target and each creature within 5 feet of it must succeed on a Dexterity saving throw or take 2d6 cold damage.</p>
+                            <p class="spellDescription text-left card-text" data-description="">Material: a bit of fleece. You create a sound or an image of an object within range that lasts for the duration. The illusion also ends if you dismiss it as an action or cast this spell again.</p>
+                            <p class="spellDescription text-left card-text" data-description="">If you create a sound, its volume can range from a whisper to a scream. It can be your voice, someone else's voice, a lion's roar, a beating of drums, or any other sound you choose. The sound continues unabated throughout the duration, or you can make discrete sounds at different times before the spell ends.</p>
+                            <p class="spellDescription text-left card-text" data-description="">If you create an image of an object--such as a chair, muddy footprints, or a small chest--it must be no larger than a 5-foot cube. The image can't create sound, light, smell, or any other sensory effect. Physical interaction with the image reveals it to be an illusion, because things can pass through it.</p>
+                            <p class="spellDescription text-left card-text" data-description="">If a creature uses its action to examine the sound or image, the creature can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the illusion becomes faint to the creature.</p>
+    
                         </div>
                     </div>
                 </div>
-            </div>
-            
-            <!-- Mage Armor -->
-            <div class="card">
-                <div class="card-header" id="heading9">
-                    <h2 class="mb-0">
-                    <button class="btn btn-link btn-block text-left cardHeaderBtn" type="button" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
-                    <p class="m-0"><i class="fas fa-book-spells abjuration"></i> Mage Armor</p>
-                    <p class="spellLevel m-0">Level 1</p>
-                    </button>
-                    </h2>
                 </div>
-                <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordionExample">
+    
+                <!-- Prestidigitation -->
+                <div class="card">
+                  <div class="card-header" id="heading3">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left cardHeaderBtn collapsed" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                        <p class="m-0"><i class="fas fa-book-spells transmutation"></i> Prestidigitation</p>
+                        <p class="spellLevel m-0">Cantrip</p>
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapse3" class="transmutationBorder collapse" aria-labelledby="heading3" data-parent="#accordionExample">
                     <div class="card-body text-dark">
+                        <p class="text-center card-text">Transmutation</p>
                         <div class="row mb-2">
                             <div class="col-6">
                                 <p class="text-center card-text mb-0">CASTING TIME</p>
@@ -385,85 +134,7 @@
                             </div>
                             <div class="col-6">
                                 <p class="text-center card-text mb-0">RANGE</p>
-                                <p class="spellRange text-center card-text" data-range="">Touch</p>
-                            </div>    
-                        </div>
-                        <div class="row mb-2">
-                            <div class="col-6">
-                                <p class="text-center card-text mb-0">COMPONENTS</p>
-                                <p class="spellComponents text-center card-text" data-components="">V, S, M</p>
-                            </div>
-                            <div class="col-6">
-                                <p class="text-center card-text mb-0">DURATION</p>
-                                <p class="spellDuration text-center card-text" data-duration="">8 hours</p>
-                            </div>
-                        </div>
-                        <div class="row p-2">
-                            <p class="spellDescription text-left card-text" data-description="">You touch a willing creature who isn't wearing armor, and a protective magical force surrounds it until the spell ends. The target's base AC becomes 13 + its Dexterity modifier. The spell ends if the target dons armor or if you dismiss the spell as an action.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Misty Step -->
-            <div class="card">
-                <div class="card-header" id="heading10">
-                    <h2 class="mb-0">
-                    <button class="btn btn-link btn-block text-left cardHeaderBtn collapsed" type="button" data-toggle="collapse" data-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
-                        <p class="m-0"><i class="fas fa-book-spells conjuration"></i> Misty Step</p>
-                        <p class="spellLevel m-0">Level 2</p>
-                    </button>
-                    </h2>
-                </div>
-                <div id="collapse10" class="collapse" aria-labelledby="heading10" data-parent="#accordionExample">
-                    <div class="card-body text-dark">
-                        <div class="row mb-2">
-                            <div class="col-6">
-                                <p class="text-center card-text mb-0">CASTING TIME</p>
-                                <p class="spellCastingTime text-center card-text" data-castingtime="">1 bonus action</p>
-                            </div>
-                            <div class="col-6">
-                                <p class="text-center card-text mb-0">RANGE</p>
-                                <p class="spellRange text-center card-text" data-range="">Self</p>
-                            </div>    
-                        </div>
-                        <div class="row mb-2">
-                            <div class="col-6">
-                                <p class="text-center card-text mb-0">COMPONENTS</p>
-                                <p class="spellComponents text-center card-text" data-components="">V</p>
-                            </div>
-                            <div class="col-6">
-                                <p class="text-center card-text mb-0">DURATION</p>
-                                <p class="spellDuration text-center card-text" data-duration="">Instantaneous</p>
-                            </div>
-                        </div>
-                        <div class="row p-2">
-                            <p class="spellDescription text-left card-text" data-description="">Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space that you can see.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Ray of Sickness -->
-            <div class="card">
-                <div class="card-header" id="heading11">
-                    <h2 class="mb-0">
-                    <button class="btn btn-link btn-block text-left cardHeaderBtn" type="button" data-toggle="collapse" data-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
-                    <p class="m-0"><i class="fas fa-book-spells necromancy"></i> Ray of Sickness</p>
-                    <p class="spellLevel m-0">Level 1</p>
-                    </button>
-                    </h2>
-                </div>
-                <div id="collapse11" class="collapse" aria-labelledby="heading11" data-parent="#accordionExample">
-                    <div class="card-body text-dark">
-                        <div class="row mb-2">
-                            <div class="col-6">
-                                <p class="text-center card-text mb-0">CASTING TIME</p>
-                                <p class="spellCastingTime text-center card-text" data-castingtime="">1 action</p>
-                            </div>
-                            <div class="col-6">
-                                <p class="text-center card-text mb-0">RANGE</p>
-                                <p class="spellRange text-center card-text" data-range="">60 ft</p>
+                                <p class="spellRange text-center card-text" data-range="">10 ft</p>
                             </div>    
                         </div>
                         <div class="row mb-2">
@@ -473,58 +144,393 @@
                             </div>
                             <div class="col-6">
                                 <p class="text-center card-text mb-0">DURATION</p>
-                                <p class="spellDuration text-center card-text" data-duration="">Instantaneous</p>
+                                <p class="spellDuration text-center card-text" data-duration="">1 hour</p>
                             </div>
                         </div>
                         <div class="row p-2">
-                            <p class="spellDescription text-left card-text" data-description="">A ray of sickening greenish energy lashes out toward a creature within range.</p>
-                            <p class="spellDescription text-left card-text" data-description="">Make a ranged spell attack against the target. On a hit, the target takes 2d8 poison damage and must make a Constitution saving throw. On a failed save, it is also poisoned until the end of your next turn.</p>
+                            <p class="spellDescription text-left card-text" data-description="">This spell is a minor magical trick that novice spellcasters use for practice. You create one of the following magical effects within 'range':</p>
+                            <p class="spellDescription text-left card-text" data-description="">You create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor.</p>
+                            <p class="spellDescription text-left card-text" data-description="">You instantaneously light or snuff out a candle, a torch, or a small campfire.</p>
+                            <p class="spellDescription text-left card-text" data-description="">You instantaneously clean or soil an object no larger than 1 cubic foot.</p>
+                            <p class="spellDescription text-left card-text" data-description="">You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour.</p>
+                            <p class="spellDescription text-left card-text" data-description="">You make a color, a small mark, or a symbol appear on an object or a surface for 1 hour.</p>
+                            <p class="spellDescription text-left card-text" data-description="">You create a nonmagical trinket or an illusory image that can fit in your hand and that lasts until the end of your next turn.</p>
+                            <p class="spellDescription text-left card-text" data-description="">If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.</p>
                         </div>
                     </div>
+                  </div>
                 </div>
-            </div>
-
-            <!-- Scorching Ray -->
-            <div class="card">
-                <div class="card-header" id="heading12">
-                    <h2 class="mb-0">
-                    <button class="btn btn-link btn-block text-left cardHeaderBtn collapsed" type="button" data-toggle="collapse" data-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
-                        <p class="m-0"><i class="fas fa-book-spells evocation"></i> Scorching Ray</p>
-                        <p class="spellLevel m-0">Level 2</p>
-                    </button>
-                    </h2>
-                </div>
-                <div id="collapse12" class="collapse" aria-labelledby="heading12" data-parent="#accordionExample">
-                    <div class="card-body text-dark">
-                        <div class="row mb-2">
-                            <div class="col-6">
+    
+                <!-- Burning Hands -->
+                <div class="card">
+                    <div class="card-header" id="heading4">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left cardHeaderBtn" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                        <p class="m-0"><i class="fas fa-book-spells evocation"></i> Burning Hands</p>
+                        <p class="spellLevel m-0">Level 1</p>
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapse4" class="evocationBorder collapse" aria-labelledby="heading4" data-parent="#accordionExample">
+                        <div class="card-body text-dark">
+                            <p class="text-center card-text">Evocation</p>
+                            <div class="row mb-2">
+                                <div class="col-6">
                                 <p class="text-center card-text mb-0">CASTING TIME</p>
-                                <p class="spellCastingTime text-center card-text" data-castingtime="">1 action</p>
+                                    <p class="spellCastingTime text-center card-text" data-castingtime="">1 action</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="text-center card-text mb-0">RANGE</p>
+                                    <p class="spellRange text-center card-text" data-range="">Self</p>
+                                </div>    
                             </div>
-                            <div class="col-6">
-                                <p class="text-center card-text mb-0">RANGE</p>
-                                <p class="spellRange text-center card-text" data-range="">120 ft</p>
-                            </div>    
-                        </div>
-                        <div class="row mb-2">
-                            <div class="col-6">
-                                <p class="text-center card-text mb-0">COMPONENTS</p>
-                                <p class="spellComponents text-center card-text" data-components="">V, S</p>
+                            <div class="row mb-2">
+                                <div class="col-6">
+                                    <p class="text-center card-text mb-0">COMPONENTS</p>
+                                    <p class="spellComponents text-center card-text" data-components="">V, S</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="text-center card-text mb-0">DURATION</p>
+                                    <p class="spellDuration text-center card-text" data-duration="">Instantaneous</p>
+                                </div>
                             </div>
-                            <div class="col-6">
-                                <p class="text-center card-text mb-0">DURATION</p>
-                                <p class="spellDuration text-center card-text" data-duration="">Instantaneous</p>
+                            <div class="row p-2">
+                                <p class="spellDescription text-left card-text" data-description="">As you hold your hands with thumbs touching and fingers spread, a thin sheet of flames shoots forth from your outstretched fingertips. Each creature in a 15-foot cone must make a dexterity saving throw. A creature takes 3d6 fire damage on a failed save, or half as much damage on a successful one.</p>
+                                <p class="spellDescription text-left card-text" data-description="">The fire ignites any flammable objects in the area that aren't being worn or carried.</p>
                             </div>
-                        </div>
-                        <div class="row p-2">
-                            <p class="spellDescription text-left card-text" data-description="">You create three rays of fire and hurl them at targets within range. You can hurl them at one target or several.</p>
-                            <p class="spellDescription text-left card-text" data-description="">Make a ranged spell attack for each ray. On a hit, the target takes 2d6 fire damage.</p>
                         </div>
                     </div>
                 </div>
+      
+                <!-- Feather Fall -->
+                <div class="card">
+                    <div class="card-header" id="heading5">
+                        <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left cardHeaderBtn" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                        <p class="m-0"><i class="fas fa-book-spells transmutation"></i> Feather Fall</p>
+                        <p class="spellLevel m-0">Level 1</p>
+                        </button>
+                        </h2>
+                    </div>
+                    <div id="collapse5" class="transmutationBorder collapse" aria-labelledby="heading5" data-parent="#accordionExample">
+                        <div class="card-body text-dark">
+                            <p class="text-center card-text">Transmutation</p>
+                            <div class="row mb-2">
+                                <div class="col-6">
+                                    <p class="text-center card-text mb-0">CASTING TIME</p>
+                                    <p class="spellCastingTime text-center card-text" data-castingtime="">1 reaction</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="text-center card-text mb-0">RANGE</p>
+                                    <p class="spellRange text-center card-text" data-range="">60 ft</p>
+                                </div>    
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-6">
+                                    <p class="text-center card-text mb-0">COMPONENTS</p>
+                                    <p class="spellComponents text-center card-text" data-components="">V, M</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="text-center card-text mb-0">DURATION</p>
+                                    <p class="spellDuration text-center card-text" data-duration="">1 minute</p>
+                                </div>
+                            </div>
+                            <div class="row p-2">
+                                <p class="spellDescription text-left card-text" data-description="">Material: a small feather or piece of down</p>
+                                <p class="spellDescription text-left card-text" data-description="">Choose up to five falling creatures within range. A falling creature's rate of descent slows to 60 feet per round until the spell ends. If the creature lands before the spell ends, it takes no falling damage and can land on its feet, and the spell ends for that creature.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Find Familiar -->
+                <div class="card">
+                    <div class="card-header" id="heading6">
+                        <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left cardHeaderBtn collapsed" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                          <p class="m-0"><i class="fas fa-book-spells conjuration"></i> Find Familiar</p>
+                          <p class="spellLevel m-0">Level 1</p>
+                        </button>
+                        </h2>
+                    </div>
+                    <div id="collapse6" class="conjurationBorder collapse" aria-labelledby="heading6" data-parent="#accordionExample">
+                        <div class="card-body text-dark">
+                            <p class="text-center card-text">Conjuration</p>
+                            <div class="row mb-2">
+                                <div class="col-6">
+                                    <p class="text-center card-text mb-0">CASTING TIME</p>
+                                    <p class="spellCastingTime text-center card-text" data-castingtime="">1 hour</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="text-center card-text mb-0">RANGE</p>
+                                    <p class="spellRange text-center card-text" data-range="">10 ft</p>
+                                </div>    
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-6">
+                                    <p class="text-center card-text mb-0">COMPONENTS</p>
+                                    <p class="spellComponents text-center card-text" data-components="">V, S, M</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="text-center card-text mb-0">DURATION</p>
+                                    <p class="spellDuration text-center card-text" data-duration="">Instantaneous</p>
+                                </div>
+                            </div>
+                            <div class="row p-2">
+                                <p class="spellDescription text-left card-text" data-description="">You gain the service of a familiar, a spirit that takes an animal form you choose: bat, cat, crab, frog (toad), hawk, lizard, octopus, owl, poisonous snake, fish (quipper), rat, raven, sea horse, spider, or weasel. Appearing in an unoccupied space within range, the familiar has the statistics of the chosen form, though it is a celestial, fey, or fiend (your choice) instead of a beast.</p>
+                                <p class="spellDescription text-left card-text" data-description="">Your familiar acts independently of you, but it always obeys your commands. In combat, it rolls its own initiative and acts on its own turn. A familiar can't attack, but it can take other actions as normal.</p>
+                                <p class="spellDescription text-left card-text" data-description="">When the familiar drops to 0 hit points, it disappears, leaving behind no physical form. It reappears after you cast this spell again.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+      
+                <!-- Grease -->
+                <div class="card">
+                    <div class="card-header" id="heading7">
+                        <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left cardHeaderBtn" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                        <p class="m-0"><i class="fas fa-book-spells conjuration"></i> Grease</p>
+                        <p class="spellLevel m-0">Level 1</p>
+                        </button>
+                        </h2>
+                    </div>
+                    <div id="collapse7" class="conjurationBorder collapse" aria-labelledby="heading7" data-parent="#accordionExample">
+                        <div class="card-body text-dark">
+                            <p class="text-center card-text">Conjuration</p>
+                            <div class="row mb-2">
+                                <div class="col-6">
+                                    <p class="text-center card-text mb-0">CASTING TIME</p>
+                                    <p class="spellCastingTime text-center card-text" data-castingtime="">1 action</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="text-center card-text mb-0">RANGE</p>
+                                    <p class="spellRange text-center card-text" data-range="">60 ft</p>
+                                </div>    
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-6">
+                                    <p class="text-center card-text mb-0">COMPONENTS</p>
+                                    <p class="spellComponents text-center card-text" data-components="">V, S, M</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="text-center card-text mb-0">DURATION</p>
+                                    <p class="spellDuration text-center card-text" data-duration="">1 minute</p>
+                                </div>
+                            </div>
+                            <div class="row p-2">
+                                <p class="spellDescription text-left card-text" data-description="">Material: a bit of pork rind or butter</p>
+                                <p class="spellDescription text-left card-text" data-description="">Slick grease covers the ground in a 10-foot square centered on a point within range and turns it into difficult terrain for the duration.</p>
+                                <p class="spellDescription text-left card-text" data-description="">When the grease appears, each creature standing in its area must succeed on a Dexterity saving throw or fall prone. A creature that enters the area or ends its turn there must also succeed on a Dexterity saving throw or fall prone.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Ice Knife -->
+                <div class="card">
+                    <div class="card-header" id="heading8">
+                        <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left cardHeaderBtn" type="button" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                        <p class="m-0"><i class="fas fa-book-spells conjuration"></i> Ice Knife</p>
+                        <p class="spellLevel m-0">Level 1</p>
+                        </button>
+                        </h2>
+                    </div>
+                    <div id="collapse8" class="conjurationBorder collapse" aria-labelledby="heading8" data-parent="#accordionExample">
+                        <div class="card-body text-dark">
+                            <p class="text-center card-text">Conjuration</p>
+                            <div class="row mb-2">
+                                <div class="col-6">
+                                    <p class="text-center card-text mb-0">CASTING TIME</p>
+                                    <p class="spellCastingTime text-center card-text" data-castingtime="">1 action</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="text-center card-text mb-0">RANGE</p>
+                                    <p class="spellRange text-center card-text" data-range="">60 ft</p>
+                                </div>    
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-6">
+                                    <p class="text-center card-text mb-0">COMPONENTS</p>
+                                    <p class="spellComponents text-center card-text" data-components="">S, M</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="text-center card-text mb-0">DURATION</p>
+                                    <p class="spellDuration text-center card-text" data-duration="">Instantaneous</p>
+                                </div>
+                            </div>
+                            <div class="row p-2">
+                                <p class="spellDescription text-left card-text" data-description="">You create a shard of ice and fling it at one creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 piercing damage. Hit or miss, the shard then explodes. The target and each creature within 5 feet of it must succeed on a Dexterity saving throw or take 2d6 cold damage.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mage Armor -->
+                <div class="card">
+                    <div class="card-header" id="heading9">
+                        <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left cardHeaderBtn" type="button" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                        <p class="m-0"><i class="fas fa-book-spells abjuration"></i> Mage Armor</p>
+                        <p class="spellLevel m-0">Level 1</p>
+                        </button>
+                        </h2>
+                    </div>
+                    <div id="collapse9" class="abjurationBorder collapse" aria-labelledby="heading9" data-parent="#accordionExample">
+                        <div class="card-body text-dark">
+                            <p class="text-center card-text">Abjuration</p>
+                            <div class="row mb-2">
+                                <div class="col-6">
+                                    <p class="text-center card-text mb-0">CASTING TIME</p>
+                                    <p class="spellCastingTime text-center card-text" data-castingtime="">1 action</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="text-center card-text mb-0">RANGE</p>
+                                    <p class="spellRange text-center card-text" data-range="">Touch</p>
+                                </div>    
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-6">
+                                    <p class="text-center card-text mb-0">COMPONENTS</p>
+                                    <p class="spellComponents text-center card-text" data-components="">V, S, M</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="text-center card-text mb-0">DURATION</p>
+                                    <p class="spellDuration text-center card-text" data-duration="">8 hours</p>
+                                </div>
+                            </div>
+                            <div class="row p-2">
+                                <p class="spellDescription text-left card-text" data-description="">You touch a willing creature who isn't wearing armor, and a protective magical force surrounds it until the spell ends. The target's base AC becomes 13 + its Dexterity modifier. The spell ends if the target dons armor or if you dismiss the spell as an action.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Ray of Sickness -->
+                <div class="card">
+                    <div class="card-header" id="heading11">
+                        <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left cardHeaderBtn" type="button" data-toggle="collapse" data-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                        <p class="m-0"><i class="fas fa-book-spells necromancy"></i> Ray of Sickness</p>
+                        <p class="spellLevel m-0">Level 1</p>
+                        </button>
+                        </h2>
+                    </div>
+                    <div id="collapse11" class="necromancyBorder collapse" aria-labelledby="heading11" data-parent="#accordionExample">
+                        <div class="card-body text-dark">
+                            <p class="text-center card-text">Necromancy</p>
+                            <div class="row mb-2">
+                                <div class="col-6">
+                                    <p class="text-center card-text mb-0">CASTING TIME</p>
+                                    <p class="spellCastingTime text-center card-text" data-castingtime="">1 action</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="text-center card-text mb-0">RANGE</p>
+                                    <p class="spellRange text-center card-text" data-range="">60 ft</p>
+                                </div>    
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-6">
+                                    <p class="text-center card-text mb-0">COMPONENTS</p>
+                                    <p class="spellComponents text-center card-text" data-components="">V, S</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="text-center card-text mb-0">DURATION</p>
+                                    <p class="spellDuration text-center card-text" data-duration="">Instantaneous</p>
+                                </div>
+                            </div>
+                            <div class="row p-2">
+                                <p class="spellDescription text-left card-text" data-description="">A ray of sickening greenish energy lashes out toward a creature within range.</p>
+                                <p class="spellDescription text-left card-text" data-description="">Make a ranged spell attack against the target. On a hit, the target takes 2d8 poison damage and must make a Constitution saving throw. On a failed save, it is also poisoned until the end of your next turn.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Misty Step -->
+                <div class="card">
+                    <div class="card-header" id="heading10">
+                        <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left cardHeaderBtn collapsed" type="button" data-toggle="collapse" data-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                            <p class="m-0"><i class="fas fa-book-spells conjuration"></i> Misty Step</p>
+                            <p class="spellLevel m-0">Level 2</p>
+                        </button>
+                        </h2>
+                    </div>
+                    <div id="collapse10" class="conjurationBorder collapse" aria-labelledby="heading10" data-parent="#accordionExample">
+                        <div class="card-body text-dark">
+                            <p class="text-center card-text">Conjuration</p>
+                            <div class="row mb-2">
+                                <div class="col-6">
+                                    <p class="text-center card-text mb-0">CASTING TIME</p>
+                                    <p class="spellCastingTime text-center card-text" data-castingtime="">1 bonus action</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="text-center card-text mb-0">RANGE</p>
+                                    <p class="spellRange text-center card-text" data-range="">Self</p>
+                                </div>    
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-6">
+                                    <p class="text-center card-text mb-0">COMPONENTS</p>
+                                    <p class="spellComponents text-center card-text" data-components="">V</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="text-center card-text mb-0">DURATION</p>
+                                    <p class="spellDuration text-center card-text" data-duration="">Instantaneous</p>
+                                </div>
+                            </div>
+                            <div class="row p-2">
+                                <p class="spellDescription text-left card-text" data-description="">Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space that you can see.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                    
+                <!-- Scorching Ray -->
+                <div class="card">
+                    <div class="card-header" id="heading12">
+                        <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left cardHeaderBtn collapsed" type="button" data-toggle="collapse" data-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                            <p class="m-0"><i class="fas fa-book-spells evocation"></i> Scorching Ray</p>
+                            <p class="spellLevel m-0">Level 2</p>
+                        </button>
+                        </h2>
+                    </div>
+                    <div id="collapse12" class="evocationBorder collapse" aria-labelledby="heading12" data-parent="#accordionExample">
+                        <div class="card-body text-dark">
+                            <p class="text-center card-text">Evocation</p>
+                            <div class="row mb-2">
+                                <div class="col-6">
+                                    <p class="text-center card-text mb-0">CASTING TIME</p>
+                                    <p class="spellCastingTime text-center card-text" data-castingtime="">1 action</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="text-center card-text mb-0">RANGE</p>
+                                    <p class="spellRange text-center card-text" data-range="">120 ft</p>
+                                </div>    
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-6">
+                                    <p class="text-center card-text mb-0">COMPONENTS</p>
+                                    <p class="spellComponents text-center card-text" data-components="">V, S</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="text-center card-text mb-0">DURATION</p>
+                                    <p class="spellDuration text-center card-text" data-duration="">Instantaneous</p>
+                                </div>
+                            </div>
+                            <div class="row p-2">
+                                <p class="spellDescription text-left card-text" data-description="">You create three rays of fire and hurl them at targets within range. You can hurl them at one target or several.</p>
+                                <p class="spellDescription text-left card-text" data-description="">Make a ranged spell attack for each ray. On a hit, the target takes 2d6 fire damage.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
             </div>
-
-          </div>
+        </section>
 
         <!-- Modal -->
         <section id="diceRollerModal">
@@ -554,7 +560,7 @@
         </section>
     </main>
     <footer>
-        <p>Julie Ragsdale | &#169; <small>nat</small> 2020</p>
+        <p>Julie Ragsdale | &#169; 2020</p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
