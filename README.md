@@ -9,15 +9,15 @@ Since this is sort of a quick fix for me, the spells are just hardcoded for now.
 ## Screenshots
 Below are a few screenshots of the app. The first image shows an expanded spell card. Each card contains the spell name, relevant discipline, spell level, casting time, range, components, duration, and a description.
 
-![Screenshot of the app with one spell expanded](assets\images\screenshots\spell-expanded.PNG)
+![Screenshot of the app with one spell expanded](assets/images/screenshots/spell-expanded.PNG)
 
 This image displays the app with all spells collapsed and ordered by level then alphabetically, allowing the user to see their spells at a glance.
 
-![Screenshot of the app with all spells collapsed](assets\images\screenshots\all-spells-collapsed.PNG)
+![Screenshot of the app with all spells collapsed](assets/images/screenshots/all-spells-collapsed.PNG)
 
 This image shows the dice roller. Shown is a 20-sided dice, which is the only one available for now. When the user clicks on the hexagon, a function runs that generates a random number between 1 and 20. This number is cleared when the user closes the modal and clicks the "Roll" button in the navigation bar. 
 
-![Screenshot of the app's dice roller](assets\images\screenshots\dice-roll-20.PNG)
+![Screenshot of the app's dice roller](assets/images/screenshots/dice-roll-20.PNG)
 
 ## Improvements
 I have several improvements in mind for this project, including: 
