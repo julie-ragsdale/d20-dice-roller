@@ -9,8 +9,6 @@ Since this is sort of a quick fix for me, the spells are just hardcoded for now.
 ## Screenshots
 Below are a few screenshots of the app. The first image shows an expanded spell card. Each card contains the spell name, relevant discipline, spell level, casting time, range, components, duration, and a description.
 
-<iframe src="https://drive.google.com/file/d/1TpvPrnJAtXwuHuXwnMhESNWC5loM7Y31/preview" width="640" height="480"></iframe>
-
 ![Screenshot of the app with one spell expanded](assets/images/screenshots/spell-expanded.PNG)
 
 This image displays the app with all spells collapsed and ordered by level then alphabetically, allowing the user to see their spells at a glance.
