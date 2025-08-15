@@ -1,6 +1,6 @@
 # D&D Spellbook
 
-Check it out here: https://leaf-junkie.github.io/d20-dice-roller/
+Check it out here: https://julie-ragsdale.github.io/d20-dice-roller/
 
 I created this little pocket spellbook to help me keep up with my spells better during D&D (Dungeons & Dragons) sessions. 
 
